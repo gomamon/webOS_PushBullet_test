@@ -4,25 +4,21 @@
 		<meta charset="UTF-8">
 		<title>Pushbullet API test</title>
 		<script src="http://alexschneider.github.io/pushbullet-js/pushbullet.min.js" type="text/javascript"></script>
-	</head>
-	<body>
-		<p>hihi</p>
-		<script type="text/javascript">
-			var url = "https://api.pushbullet.com/v2/devices";
-			const Http = new XMLHttpRequest();
-			Http.open("GET", url);
-			Http.setRequestHeader("Access-Token","o.NOOtEvyU6x9AM3crv96GthauDTUEFeIy");
-			Http.send();
-			Http.onreadystatechange=(e)=>{
-				console.log(Http.responseText);
-			}
+  <style>
+    body{
+      background: #4ab367;
+    }
+  </style>
+  </head>
 
-		</script>i
-
-
-	</head>
-
-	<body>
-	</body>
-
+  <body>
+    <header>
+      <input type="text" placeholder="input your message!" id="sending_text">
+      <button id="send"> button </>
+    </header>
+    <div id="token">
+    </div>		
+    
+    <script src="main.js" type="text/javascript"></script>
+  </body>
 </html>
